@@ -1,8 +1,7 @@
- 
  /*Divider-appearance-settings*/
 
  /* Dashed border */
-hr.dashed {
+ hr.dashed {
   border-top: 3px dashed #bbb;
 }
 
@@ -85,10 +84,7 @@ hr.rounded {
 
 
 .hero-text {
-    /* Sizing */
-    width: 100vw;
-    height: 100vh;
-    
+     
     /* Flexbox stuff */
     display: flex;
     justify-content: center;
@@ -184,4 +180,16 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.page-links {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
