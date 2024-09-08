@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot beans - Home</title>
     <link rel="stylesheet" href="hot beans.css">
+    <link rel ="script" href="hot-beans-.js">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="hot-beans-home.html">Home</a></li>
-                <li><a href="hot-beans-staff-page.html">Staff Members</a></li>
-                <li><a href="hot-beans-form.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+
+        <ul class="breadcrumb">
+          <li><a href="hot-beans-home.html">Home</a></li>
+          <li><a href="hot-beans-staff-page.html">Staff Members</a></li>
+          <li><a href="hot-beans-form.html">Contact us</a></li>
+
+        </ul>
+        
+        </body>
     <main>
 
 <!--TODO - Figure out better design with page links (check obsidian)-->
@@ -27,21 +29,43 @@
           
             </div>
         </div>
-        </section>
-        <section class="features">
-            <h2>Our Features</h2>
-            <div class="feature-box">
-                <h3>Feature One</h3>
-                <p>Detail about feature one.</p>
+
+            <h2>Our Features!</h2>
+            
+            <button class="collapsible">Open Feature One</button>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="feature-box">
-                <h3>Feature Two</h3>
-                <p>Detail about feature two.</p>
+            <button class="collapsible">Open Feature Two</button>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="feature-box">
-                <h3>Feature Three</h3>
-                <p>Detail about feature three.</p>
+            <button class="collapsible">Open Feature Three</button>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
+            
+            <!--script for collapse boxes-->
+
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+   
+  
+
         </section>
     </main>
     <footer>
@@ -49,4 +73,4 @@
         <p>&copy; Hot Beans ltd. All rights reserved.</p>
     </footer>
 </body>
-</html>
+</html> 
