@@ -20,7 +20,7 @@ body {
     list-style: none;
     display: flex;
     gap: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .breadcrumb li {
@@ -108,7 +108,7 @@ footer p {
 
 /* nav bar */
 ul.breadcrumb {
-  padding: 8px 16px;
+  padding: 3px 16px;
   list-style: none;
   background-color: #eee;
 }
