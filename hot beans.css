@@ -428,3 +428,12 @@ footer {
 footer p {
     margin: 0;
 }
+
+
+.breadcrumb {
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
+

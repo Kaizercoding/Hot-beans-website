@@ -128,3 +128,10 @@ html {
     scroll-behavior: smooth;
 }
 
+
+.breadcrumb {
+    position: fixed;
+    top: 1px;
+    width: 100%;
+}
+
