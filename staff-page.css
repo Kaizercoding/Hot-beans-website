@@ -1,0 +1,130 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+    background-color: #e9ecef;
+    padding: 10px 20px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Main section styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Staff section styles */
+.staff {
+    text-align: center;
+}
+
+.staff h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.staff-member {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.staff-member img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.staff-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.staff-member p {
+    font-size: 1em;
+    color: #666;
+}
+
+hr.dashed {
+    border: 0;
+    border-top: 1px dashed #ddd;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* nav bar */
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {color: rgb(0, 0, 0);}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+

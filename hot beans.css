@@ -292,7 +292,7 @@ html {
 .content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 0.3s ease-out;
 }
 
 
@@ -313,11 +313,6 @@ html {
 }
 
 
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
 
 
 /* Form Slide-in */
@@ -356,4 +351,80 @@ button.invalid {
 form input:focus, form textarea:focus {
     background-color: #f9f9f9;
     transition: background-color 0.3s ease-in-out;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+    background-color: #e9ecef;
+    padding: 10px 20px;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* nav bar */
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {color: rgb(0, 0, 0);}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333; 
+   }
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
